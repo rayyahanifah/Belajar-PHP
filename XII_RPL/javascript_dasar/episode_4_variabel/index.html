@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let nama = "Rayya";
+        // console.log(nama);
+
+        // nama = "Rayya Hanifah";
+        // console.log(nama);
+
+        var namaDepan = "R D1";
+        console.log(namaDepan);
+        namaDepan = "Ra D2";
+        console.log(namaDepan);
+
+        let namaBelakang = "H B1";
+        {
+            let namaBelakang = "Ha B2";
+            console.log(namaBelakang);
+        }
+        console.log(namaBelakang);
+
+        var namaTengah = "H T1";
+        {
+            var namaTengah = "Ha T2";
+            console.log(namaTengah);
+        }
+        console.log(namaTengah);
+
+        var a = 5;
+        var a = 15;
+        console.log(a);
+
+        for (var i = 0; i < 3; i++) {
+        setTimeout(function () {
+            console.log('var i =', i);
+        }, 100);
+        }
+ 
+        for (let j = 0; j < 3; j++) {
+        setTimeout(function () {
+            console.log('let j =', j);
+        }, 100);
+        }
+
+        var nama = "Rayya";
+        let kelas = "XII RPL";
+        console.log("Nama saya " + nama + " dan saya berada di kelas " + kelas);
+
+        function hitungLuasPersegi(sisi) {
+        let luas = sisi * sisi;
+        console.log(`Luas persegi dengan sisi ${sisi} adalah: ${luas}`);
+        }
+        hitungLuasPersegi(5); 
+
+        if (true) {
+        let pesan = "Halo dari dalam blok!";
+        }
+        console.log(pesan); 
+
+        const daftarSiswa = [
+        { nama: "Rayya", nilai: [85, 90, 80] },
+        { nama: "Hanifah", nilai: [90, 95, 92] }
+        ];
+        for (let i = 0; i < daftarSiswa.length; i++) {
+        let total = 0;
+        for (let j = 0; j < daftarSiswa[i].nilai.length; j++) {
+            total += daftarSiswa[i].nilai[j];
+        }
+        let rataRata = total / daftarSiswa[i].nilai.length;
+        console.log(`Rata-rata ${daftarSiswa[i].nama}: ${rataRata}`);
+        }
+
+        
+    </script>
+</body>
+</html>
